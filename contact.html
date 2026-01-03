@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./master.css">
+    <title>Contact</title>
+    <link rel="icon" href="./assets/Sun Man Graphic_cropped.png">
+
+</head>
+
+<body>
+    <img id="logo" src="./assets/dietrichs-ice-cream-2026-logo.png" alt="Dietrich's Ice Cream logo" width="600">
+    <nav>
+        <div class="navbar">
+            <a class="nav-link" href="./index.html">About</a>
+            <a class="nav-link" href="./items_offered.html">Items Offered</a>
+            <a class="active-nav-link" href="./contact.html">Contact</a>
+        </div>
+    </nav>
+    <div class="contact-info">
+        <h1>Contact Us</h1>
+        <p><strong>Located in Chambersburg, PA</strong></p>
+        <p>Email: <span>dietrichsicecream@comcast.net</span></p>
+        <p>Text or Call: <span>717-977-7569</span></p>
+    </div>
+    <div class="contact-form">
+        <form method="POST" action="send_email.php">
+            <p style="text-align: center; margin-top: 5px; margin-bottom: 25px;" >
+                <strong>You can also contact us with this form:</strong>
+            </p>
+            <div>
+                <label for="firstName">First Name:</label>
+                <input class="float" type="text" name="First Name" id="firstName" required>
+                <br>
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input class="float" type="text" name="Last Name" id="lastName" required>
+                <br>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input class="float" type="email" name="Email" id="email" required>
+                <br>
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input class="float" type="number" name="Phone" id="phone">
+                <br>
+            </div>
+            <div>
+                <label for="message">Message or questions:</label>
+                <br>
+                <textarea rows="4" cols="38" wrap="soft" id="message" name="message" required></textarea>
+                <br>
+            </div>
+            <div>
+            <input type="submit" value="Submit" id="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
