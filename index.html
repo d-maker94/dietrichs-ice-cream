@@ -27,7 +27,7 @@
         <p id="disclaimer"><em>Note: Due to the amount of prep work involved in operating our business, we require a "minimum in sales" to do private events. Please <a href=contact.html>contact us</a> for more information.</em></p>
     </div>
     <h1>Event Photos</h1>
-    <div id="photo-gallery" class="photo-gallery">
+    <div id="photo-gallery1" class="photo-gallery">
         <a href="assets/image0.jpeg" data-sub-html="<h3>Car Show</h3>">
             <img alt="line of customers waiting for ice cream at a car show" src="assets/image0.jpeg">
         </a>
@@ -53,11 +53,43 @@
             <img alt="Dietrich's Ice Cream truck parked outside NAPA auto parts" src="assets/image13.jpeg">
         </a>
     </div>
+    <h1>In the Beginning</h1>
+    <div id="photo-gallery2" class="photo-gallery">
+        <a href="assets/in-the-beginning/image9.jpeg" data-sub-html="<p>Buying the DHL truck</p>">
+            <img alt="little girl sitting in the driver's seat of a white delivery truck" src="assets//in-the-beginning/image9.jpeg">
+        </a>
+        <a href="assets/in-the-beginning/image10.jpeg" data-sub-html="<p>Truck interior after purchasing it</p>">
+            <img alt="empty interior of a DHL delivery truck" src="assets//in-the-beginning/image10.jpeg">
+        </a>
+        <a href="assets/in-the-beginning/image11.jpeg" data-sub-html="<p>Before the truck had a window</p>">
+            <img alt="blank white delivery truck sitting in driveway" src="assets//in-the-beginning/image11.jpeg">
+        </a>
+         <a href="assets/in-the-beginning/image12.jpeg" data-sub-html="<p>Starting work on the interior</p>">
+            <img alt="delivery truck interior with wood panels installed" src="assets//in-the-beginning/image12.jpeg">
+        </a>       
+        <a href="assets/in-the-beginning/image13.jpeg" data-sub-html="<p>Installing the window</p>">
+            <img alt="white delivery truck with a serving window being installed on the side of the vehicle" src="assets//in-the-beginning/image13.jpeg">
+        </a>
+        <a href="assets/in-the-beginning/image15.jpeg" data-sub-html="<p>Window installation was a success!</p>">
+            <img alt="white delivery truck with a serving window installed in the side" src="assets//in-the-beginning/image15.jpeg">
+        </a>
+        <a href="assets/in-the-beginning/image16.jpeg" data-sub-html="<p>Interior shelves removed before installing cabinets and freezers</p>">
+            <img alt="interior of a delivery truck with a serving window installed and its shelves removed" src="assets//in-the-beginning/image16.jpeg">
+        </a>
+    </div>
     <script src="dist/lightgallery.umd.js"></script>
     <script src="dist/plugins/thumbnail/lg-thumbnail.umd.js"></script>
     <script src="dist/plugins/zoom/lg-zoom.umd.js"></script>
     <script type="text/javascript">
-        lightGallery(document.getElementById('photo-gallery'), {
+        lightGallery(document.getElementById('photo-gallery1'), {
+            plugins: [lgZoom, lgThumbnail],
+            thumbnail: true,
+            licenseKey: 'LG-HOBBY-8E3F333E-876C-4003-8D5E-9989421684ED',
+            speed: 500,
+        });
+    </script>    
+    <script type="text/javascript">
+        lightGallery(document.getElementById('photo-gallery2'), {
             plugins: [lgZoom, lgThumbnail],
             thumbnail: true,
             licenseKey: 'LG-HOBBY-8E3F333E-876C-4003-8D5E-9989421684ED',
