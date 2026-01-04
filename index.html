@@ -4,6 +4,7 @@
 <head>
 
     <meta charset="UTF-8" />
+    <link type="text/css" rel="stylesheet" href="./dist/css/lightgallery-bundle.css">
     <link rel="stylesheet" href="./master.css">
     <title>About</title>
     <link rel="icon" href="./assets/Sun Man Graphic_cropped.png">
@@ -25,6 +26,44 @@
         <p>My wife, son, daughter and I started doing events in 2011. I originally built the truck to sell ice cream at car shows and cruise-ins, but since then our business has grown into serving at a variety of events, including: <span>Car Shows, Sporting Events, Craft Shows, Corporate Events, Birthday Parties, Weddings, Church Events, Picnics, and any place an ice cream truck is needed!</span></p>
         <p id="disclaimer"><em>Note: Due to the amount of prep work involved in operating our business, we require a "minimum in sales" to do private events. Please <a href=contact.html>contact us</a> for more information.</em></p>
     </div>
+    <h1>Event Photos</h1>
+    <div id="photo-gallery" class="photo-gallery">
+        <a href="assets/image0.jpeg">
+            <img alt="ice cream truck serving a line at a car show" src="assets/image0.jpeg">
+        </a>
+        <a href="assets/image2.jpeg">
+            <img alt="ice cream truck at a Softball Tournament" src="assets/image2.jpeg">
+        </a>
+        <a href="assets/image3.jpeg">
+            <img alt="ice cream serving a long line at a church event" src="assets/image3.jpeg">
+        </a>
+        <a href="assets/image4.jpeg">
+            <img alt="ice cream truck parked in front of American flag" src="assets/image4.jpeg">
+        </a>
+        <a href="assets/image5.jpeg">
+            <img alt="ice cream truck at Caledonia Craft Show" src="assets/image5.jpeg">
+        </a>
+        <a href="assets/image8.jpeg">
+            <img alt="ice cream truck with ground effect lights at football game" src="assets/image8.jpeg">
+        </a>
+        <a href="assets/image9.jpeg">
+            <img alt="ice cream truck beneath many large cranes" src="assets/image9.jpeg">
+        </a>
+        <a href="assets/image13.jpeg">
+            <img alt="ice cream truck parked outside NAPA auto parts" src="assets/image13.jpeg">
+        </a>
+    </div>
+    <script src="dist/lightgallery.umd.js"></script>
+    <script src="dist/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="dist/plugins/zoom/lg-zoom.umd.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('photo-gallery'), {
+            plugins: [lgZoom, lgThumbnail],
+            thumbnail: true,
+            licenseKey: 'LG-HOBBY-8E3F333E-876C-4003-8D5E-9989421684ED',
+            speed: 500,
+        });
+    </script>
 </body>
 
 <footer>
