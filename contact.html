@@ -23,26 +23,24 @@
     <div class="contact-info">
         <h1>Contact Us</h1>
         <p><strong>Located in Chambersburg, PA</strong></p>
-        <p>Email: <span>dietrichsicecream@comcast.net</span></p>
-        <p>Text or Call: <span>717-977-7569</span></p>
+        <p>Email: <span >dietrichsicecream@comcast.net</span></p>
+        <p>Text or Call: <span>717-977-2543</span></p>
     </div>
     <div class="contact-form">
-        <form method="POST" action="send_email.php">
-            <p style="text-align: center; margin-top: 5px; margin-bottom: 25px;" >
-                <strong>You can also contact us with this form:</strong>
-            </p>
+        <form method="POST" action="mailto: dietrichsicecream@comcast.net" enctype="multipart/form-data">
+            <p class="contact-form-header">You can also contact us with this form:</p>
             <div>
-                <label for="firstName">First Name:</label>
+                <label for="firstName">First Name:<span>*</span></label>
                 <input class="float" type="text" name="First Name" id="firstName" required>
                 <br>
             </div>
             <div>
-                <label for="lastName">Last Name:</label>
+                <label for="lastName">Last Name:<span>*</span></label>
                 <input class="float" type="text" name="Last Name" id="lastName" required>
                 <br>
             </div>
             <div>
-                <label for="email">Email:</label>
+                <label for="email">Email:<span>*</span></label>
                 <input class="float" type="email" name="Email" id="email" required>
                 <br>
             </div>
@@ -52,13 +50,16 @@
                 <br>
             </div>
             <div>
-                <label for="message">Message or questions:</label>
+                <label for="message">Your message or inquiry:<span>*</span></label>
                 <br>
                 <textarea rows="4" cols="38" wrap="soft" id="message" name="message" required></textarea>
                 <br>
             </div>
             <div>
             <input type="submit" value="Submit" id="submit">
+            </div>
+            <div>
+                <p style="opacity: 0.5;"><em>* = required</em></p>
             </div>
         </form>
     </div>
