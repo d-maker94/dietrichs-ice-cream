@@ -12,9 +12,9 @@ body {
 /* About */
 
 #about-us {
-    font-size: 22px;
     line-height: 1.3;
 }
+
 
 #about-us span {
     color: #0104cf;
@@ -148,6 +148,7 @@ body {
     margin: 0px auto;
     margin-top: 15px;
     width: 400px;
+    font-size: 18px;
 }
 
 .float {
