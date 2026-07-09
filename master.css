@@ -210,6 +210,10 @@ h1 {
     color: red;
 }
 
+#contact-form input, textarea {
+    font-size: 18px;
+}
+
 footer {
     text-align: center;
 }
