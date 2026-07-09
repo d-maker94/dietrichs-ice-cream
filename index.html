@@ -184,6 +184,18 @@
             speed: 500,
         });
     </script>
+    <script type="text/javascript">
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            const emailInput = document.getElementById('email');
+            const emailValue = emailInput.value;
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            
+            if (!emailRegex.test(emailValue)) {
+                event.preventDefault();
+                alert('The email address is invalid. Please enter a valid email.');
+            }
+        });
+    </script>
 </body>
 
 <footer>
