@@ -169,6 +169,23 @@ form span {
     margin-top: 3px;
 }
 
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+}
+
 h1 {
     text-align: center;
 }

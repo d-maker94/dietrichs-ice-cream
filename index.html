@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <link type="text/css" rel="stylesheet" href="./dist/css/lightgallery-bundle.css">
     <link rel="stylesheet" href="./master.css">
-    <title>About</title>
+    <title>Dietrich's Ice Cream</title>
     <link rel="icon" href="./assets/Sun Man Graphic_cropped.png">
     
 </head>
@@ -15,19 +15,104 @@
     <img id="logo" src="./assets/dietrichs-ice-cream-2026-logo.png" alt="Dietrich's Ice Cream logo" width="600">
     <nav>
         <div class="navbar">
-            <a class="active-nav-link" href="./index.html">About</a>
-            <a class="nav-link" href="./items_offered.html">Items Offered</a>
-            <a class="nav-link" href="./contact.html">Contact</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#items">Items Offered</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" href="#photos">Event Photos</a>
         </div>
     </nav>
-    <h1>About Our Business</h1>
+    <h1 id="about">About Our Business</h1>
     <div id="about-us">
         <p style="font-size: 20px;">We are a family owned and operated ice cream truck business located in Chambersburg, Pennsylvania. In 2010, we purchased a retired DHL delivery truck and transformed it into the ice cream truck you see today.</p>
         <p style="font-size: 20px;">My wife, son, daughter and I started doing events in 2011. I originally built the truck to sell ice cream at car shows and cruise-ins, but since then our business has grown into serving at a variety of events, including: <span>Car Shows, Sporting Events, Craft Shows, Corporate Events, Birthday Parties, Weddings, Church Events, Picnics, and any place an ice cream truck is needed!</span></p>
-        <p id="disclaimer" style="font-size: 20px;"><em>Note: Due to the amount of prep work involved in operating our business, we require a "minimum in sales" to do private events. Please <a href=contact.html>contact us</a> for more information.</em></p>
+        <p id="disclaimer" style="font-size: 20px;"><em>Note: Due to the amount of prep work involved in operating our business, we require a "minimum in sales" to do private events. Please <a href="#contact">contact us</a> for more information.</em></p>
     </div>
     <hr class="solid" style="margin: 30px 25%; opacity: 0.7;">
-    <h1>Event Photos</h1>
+    <h1 id="items">Items Offered</h1>
+    <div class="item-list-cards">
+        <div class="item-list" id="ice-cream-flavors">
+            <h3>Hershey's Ice Cream</h3>
+            <p><em>Cake cones, waffle cones, and dishes</em></p>
+            <p><em>Sizes: Small, 2 dips | Large, 3 dips</em></p>
+            <ul>
+                <li>Black Cherry</li>
+                <li>Butter Pecan</li>
+                <li>Chocolate</li>
+                <li>Chocolate Chip Cookie Dough</li>
+                <li>Cookies & Cream</li>
+                <li>Green Mint Chip</li>
+                <li>Moose Tracks</li>
+                <li>Orange Blossom</li>
+                <li>Peanut Butter Twist</li>
+                <li>Raspberry</li>
+                <li>Strawberry Cheesecake</li>
+                <li>Vanilla</li>
+            </ul>
+            <h3>Floats</h3>
+            <p><em>Combine any ice cream flavor<br> with a variety of sodas:</em></p>
+            <ul>
+                <li>Coke</li>
+                <li>Dr. Pepper</li>
+                <li>Orange</li>
+                <li>Root Beer</li>
+            </ul>
+        </div>
+        <div class="item-list" id="snow-cones">
+            <h3>Snow Cones</h3>
+            <p><em>Sizes: Small, 12oz cup | Medium, 16oz cup |<br>
+                Large, 20oz cup | THE BIG HONK'N, 32oz cup</em></p>
+            <ul>
+                <li>Blue Raspberry</li>
+                <li>Cherry</li>
+                <li>Cotton Candy</li>
+                <li>Fruit Punch</li>
+                <li>Grape</li>
+                <li>Mango</li>
+                <li>Orange</li>
+                <li>Pina Colada</li>
+                <li>Red Raspberry</li>
+                <li>Root Beer</li>
+                <li>Strawberry</li>
+                <li>Watermelon</li>
+            </ul>
+        </div>
+    </div>
+    <hr class="solid" style="margin: 30px 25%; opacity: 0.7;">
+    <h1 id="contact">Contact Us</h1>
+    <div class="contact-info">
+        <p><strong>Located in Chambersburg, PA</strong></p>
+        <p>Email: <span>dietrichsicecream@comcast.net</span></p>
+        <p>Text or Call: <span>717-977-2543</span></p>
+    </div>
+    <div class="contact-form">
+        <form action="#" method="post">
+            <div>
+                <label for="first-name">First Name</label><br>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div>
+                <label for="last-name">Last Name</label><br>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div>
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="event-description">Event Description</label><br>
+                <textarea id="event-description" name="event-description" rows="4" required></textarea>
+            </div>
+            <div style="text-align: center;">
+                <button type="submit" class="nav-link">Submit</button>
+            </div>
+        </form>
+    </div>
+    <hr class="solid" style="margin: 30px 25%; opacity: 0.7;">
+    <h1 id="photos">Event Photos</h1>
     <div id="photo-gallery1" class="photo-gallery">
         <a href="assets/image0.jpeg" data-sub-html="<h3>Car Show</h3>">
             <img alt="line of customers waiting for ice cream at a car show" src="assets/image0.jpeg">
@@ -58,25 +143,25 @@
     <h1>In the Beginning</h1>
     <div id="photo-gallery2" class="photo-gallery">
         <a href="assets/in-the-beginning/image9.jpeg" data-sub-html="<p>Buying the DHL truck</p>">
-            <img alt="little girl sitting in the driver's seat of a white delivery truck" src="assets//in-the-beginning/image9.jpeg">
+            <img alt="little girl sitting in the driver's seat of a white delivery truck" src="assets/in-the-beginning/image9.jpeg">
         </a>
         <a href="assets/in-the-beginning/image10.jpeg" data-sub-html="<p>Truck interior after purchasing it</p>">
-            <img alt="empty interior of a DHL delivery truck" src="assets//in-the-beginning/image10.jpeg">
+            <img alt="empty interior of a DHL delivery truck" src="assets/in-the-beginning/image10.jpeg">
         </a>
         <a href="assets/in-the-beginning/image11.jpeg" data-sub-html="<p>Before the truck had a window</p>">
-            <img alt="blank white delivery truck sitting in driveway" src="assets//in-the-beginning/image11.jpeg">
+            <img alt="blank white delivery truck sitting in driveway" src="assets/in-the-beginning/image11.jpeg">
         </a>
          <a href="assets/in-the-beginning/image12.jpeg" data-sub-html="<p>Starting work on the interior</p>">
-            <img alt="delivery truck interior with wood panels installed" src="assets//in-the-beginning/image12.jpeg">
+            <img alt="delivery truck interior with wood panels installed" src="assets/in-the-beginning/image12.jpeg">
         </a>       
         <a href="assets/in-the-beginning/image13.jpeg" data-sub-html="<p>Installing the window</p>">
-            <img alt="white delivery truck with a serving window being installed on the side of the vehicle" src="assets//in-the-beginning/image13.jpeg">
+            <img alt="white delivery truck with a serving window being installed on the side of the vehicle" src="assets/in-the-beginning/image13.jpeg">
         </a>
         <a href="assets/in-the-beginning/image15.jpeg" data-sub-html="<p>Window installation was a success!</p>">
-            <img alt="white delivery truck with a serving window installed in the side" src="assets//in-the-beginning/image15.jpeg">
+            <img alt="white delivery truck with a serving window installed in the side" src="assets/in-the-beginning/image15.jpeg">
         </a>
         <a href="assets/in-the-beginning/image16.jpeg" data-sub-html="<p>Interior shelves removed before installing cabinets and freezers</p>">
-            <img alt="interior of a delivery truck with a serving window installed and its shelves removed" src="assets//in-the-beginning/image16.jpeg">
+            <img alt="interior of a delivery truck with a serving window installed and its shelves removed" src="assets/in-the-beginning/image16.jpeg">
         </a>
     </div>
     <script src="dist/lightgallery.umd.js"></script>
